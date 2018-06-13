@@ -1,9 +1,12 @@
 # Musical Shower Caddy
 *Built by Brian Margolis (BrianMargolis2019 [at] u [dot] northwestern [dot] edu) in Professor Bryan Pardo's Digital Luthier course at Northwestern University.*
 
+## Video
+[Video.](https://youtu.be/ABHQxuqOv6U)
+
 ## What is the Musical Shower Caddy?
 The Musical Shower Caddy is an ensemble of instruments built from soap bottles, toothbrushes, and other items one would find in a shower caddy. By using the included looper pedal-like functionality, a user can use the entire ensemble of instruments to create a layered performance.
-![Musical Shower Caddy](/images/logo.png)
+![Musical Shower Caddy](/images/msc.jpg)
 
 ## Why would you ever build something like this? And who would use it?
 I was motivated by the idea of taking something mundane and routine and injecting creativity into it through music. 
