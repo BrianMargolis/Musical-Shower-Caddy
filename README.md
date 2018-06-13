@@ -5,7 +5,7 @@
 [Video.](https://youtu.be/ABHQxuqOv6U)
 
 ## What is the Musical Shower Caddy?
-The Musical Shower Caddy is an ensemble of instruments built from soap bottles, toothbrushes, and other items one would find in a shower caddy. By using the included looper pedal-like functionality, a user can use the entire ensemble of instruments to create a layered performance.
+The Musical Shower Caddy is an ensemble of instruments built from soap bottles, toothbrushes, and other items one would find in a shower caddy. By using the included looper pedal-like functionality, a user can use the entire ensemble of instruments to create a layered performance. Performing on this instrument should resemble taking a shower!
 ![Musical Shower Caddy](/images/msc.jpg)
 
 ## Why would you ever build something like this? And who would use it?
