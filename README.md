@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Musical Shower Caddy
+*Built by Brian Margolis (BrianMargolis2019 [at] u [dot] northwestern [dot] edu) in Professor Bryan Pardo's Digital Luthier Course at Northwestern University.*
 
-You can use the [editor on GitHub](https://github.com/BrianMargolis/Musical-Shower-Caddy/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## What is the Musical Shower Caddy?
+The Musical Shower Caddy is an ensemble of instruments built from soap bottles, toothbrushes, and other items one would find in a shower caddy. By using the included looper pedal-like functionality, a user can use the entire ensemble of instruments to create a layered performance.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Why would you ever build something like this? And who would use it?
+I was motivated by the idea of taking something mundane and routine and injecting creativity into it through music. 
 
-### Markdown
+You'll need at least some musical skill to play the Musical Shower Caddy, including ability to play rhythms precisely and basic piano skills. Through experience, I've found that the most challenging aspect of performing on the Musical Shower Caddy is actually the swapping that occurs between instruments.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## What are the constituent components of the Musical Shower Caddy?
+There are four digital components that either emit MIDI data or work to filter the audio as the last step in the signal chain.
+1. Squeeze whistle - a soap bottle that emits a pitch that varies as it is squeezed
+2. Looper pump - a pump bottle that works like a looper pedal
+3. Toothbrush filter - a toothbrush that applies a lowpass filter to the entire audio stream based on how fast it's being accelerated
+4. Slap bottle - a soap bottle that acts like a drum pad when smacked on the bottom
 
-```markdown
-Syntax highlighted code block
+There are also two acoustic components that are mic'd up for performance.
+1. Squeeze melodica - a squeeze bottle hooked up to a [melodica](https://en.wikipedia.org/wiki/Melodica)
+2. Shaker bottle - a bottle with a shaker egg hidden inside it
 
-# Header 1
-## Header 2
-### Header 3
+## Tech Stack
+All the various (digital) components have sensors on them that are controlled by [Arduino](https://www.arduino.cc/) code. That Arduino code interprets the sensor output and packages it into a serial stream, which [Max](https://cycling74.com/products/max) reads in. From this information, Max creates MIDI data and sends it over to [Ableton](https://www.ableton.com/en/) - although any DAW could work in its place. Finally, Ableton sends the audio stream back over to Max, where some final filtering is done and playback occurs.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BrianMargolis/Musical-Shower-Caddy/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Lessons learned and future work
